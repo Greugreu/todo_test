@@ -20,7 +20,7 @@
       <v-card class="mx-auto" color="white" dark max-width="800">
         <v-card-text class="font-weight-bold title blue--text">
           {{ todo.title }}
-          <v-list-item id="todo-list-item" class="grow">
+          <v-list-item id="todo-list-item1" class="grow">
             <v-btn
                 @click="completeTodo(todo._id)"
                 class="mx-2"
@@ -45,7 +45,7 @@
       <v-card class="mx-auto" color="blue" dark max-width="800">
         <v-card-text class="font-weight-bold title white--text">
           {{ todo.title }}
-          <v-list-item id="todo-list-item" class="grow">
+          <v-list-item id="todo-list-item2" class="grow">
             <v-btn @click="deleteTodo(todo._id)" class="mx-2" small color="red"
             >Supprmier</v-btn
             >
