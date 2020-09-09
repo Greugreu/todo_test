@@ -5,7 +5,7 @@
     </div>
     <div class="d-flex justify-center">
       <v-col cols="6" style="margin: 0px auto;">
-        <v-text-field v-model="newTodo" label="Add Todo" solo></v-text-field>
+        <v-text-field v-model="newTodo" label="Nom de la tâche" solo></v-text-field>
       </v-col>
     </div>
     <div class="d-flex justify-center">
@@ -16,6 +16,7 @@
     <div class="d-flex justify-center">
       <h1>A faire</h1>
     </div>
+    <div id="toto"></div>
     <div v-for="todo in uncompletedTodos" :key="todo._id">
       <v-card class="mx-auto" color="white" dark max-width="800">
         <v-card-text class="font-weight-bold title blue--text">
@@ -47,7 +48,7 @@
           {{ todo.title }}
           <v-list-item id="todo-list-item2" class="grow">
             <v-btn @click="deleteTodo(todo._id)" class="mx-2" small color="red"
-            >Supprmier</v-btn
+            >Supprimer</v-btn
             >
           </v-list-item>
         </v-card-text>
