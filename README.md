@@ -10,6 +10,7 @@ node index
 ### Client
 ```
 cd client
+npm install
 npm run serve
 ```
 
